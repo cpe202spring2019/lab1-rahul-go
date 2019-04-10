@@ -36,13 +36,16 @@ def bin_search(target, low, high, int_list):  # must use recursion
 
     # Integer average
     mid = (low + high) // 2
-    print(low)
-    print(high)
-    input(mid)
-    print()
 
-    # Handle edge cases
+    # Final check
     if mid == low:
+        # Match found
+        if int_list[mid] == target:
+            return mid
+        # Mathch found in upper edge case
+        if int_list[mid+1] == target:
+            return mid+1
+        # Match not found
         return None
 
     # Match found
@@ -54,6 +57,3 @@ def bin_search(target, low, high, int_list):  # must use recursion
     # Value too high
     elif int_list[mid] > target:
         return bin_search(target, low, mid, int_list)
-
-list_val =[0,1,2,3,4,7,8,9,10]
-print(bin_search(0, 0, len(list_val)-1, list_val))
