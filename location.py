@@ -1,3 +1,7 @@
+# RAHUL GOYAL
+# CPE 202-03
+# April 10, 2019
+
 # CPE 202 Lab 0
 
 # represents a location using name, latitude and longitude
