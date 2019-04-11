@@ -55,8 +55,11 @@ def bin_search(target, low, high, int_list):  # must use recursion
         if int_list[mid] == target:
             return mid
         # Match found in upper edge case
-        if int_list[mid+1] == target:
-            return mid+1
+        try:
+            if int_list[mid+1] == target:
+                return mid+1
+        except:
+            return None
         # Match not found
         return None
 
