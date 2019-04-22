@@ -8,8 +8,8 @@ from lab1 import *
 class TestLab1(unittest.TestCase):
 
     def test_max_list_iter(self):
-        """Test the max_list_iter function, which returns the maximum of a list
-        using recursion."""
+        """Test the max_list_iter() function, which returns the maximum of a
+        list using recursion."""
 
         # Test None list input
         with self.assertRaises(ValueError):  # used to check for exception
@@ -34,11 +34,9 @@ class TestLab1(unittest.TestCase):
         # Test all same input
         self.assertEqual(max_list_iter([1, 1, 1]), 1)
 
-
-
     def test_reverse_rec(self):
-        """Test the reverse_rec function, which returns the reversed list using
-        recursion."""
+        """Test the reverse_rec() function, which returns the reversed list
+        using recursion."""
 
         # Test None list input
         with self.assertRaises(ValueError):  # used to check for exception
@@ -53,11 +51,9 @@ class TestLab1(unittest.TestCase):
         # Test typical list input
         self.assertEqual(reverse_rec([1,2,3]),[3,2,1])
 
-
-
     def test_bin_search(self):
-        """Test the binary search function, which returns the index of a value
-        in a list using recursion."""
+        """Test the bin_search() function, which returns the index of a value in
+        a list using recursion."""
 
         test_list = [1, 3, 5, 7, 9, 10, 12, 14, 16, 18, 20]
         low = 0

@@ -6,6 +6,7 @@
 
 # represents a location using name, latitude and longitude
 class Location:
+
     def __init__(self, name, lat, lon):
         self.name = name    # string for name of location
         self.lat = lat      # latitude in degrees (-90 to 90)
@@ -20,6 +21,8 @@ class Location:
 
     def __repr__(self):
         return ("Location({!r}, {!r}, {!r})".format(self.name, self.lat, self.lon))
+
+
 
 def main():
     loc1 = Location("SLO", 35.3, -120.7)
@@ -41,6 +44,8 @@ def main():
     print(loc2 in locations)
     print(loc3 in locations)
     print(loc4 in locations)
+
+
 
 if __name__ == "__main__":
     main()
