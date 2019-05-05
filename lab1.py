@@ -5,7 +5,7 @@
 def max_list_iter(int_list):  # must use iteration not recursion
     """Finds the max of a list of numbers and returns the value (not the index).
     If int_list is empty, returns None. If list is None, raises ValueError."""
-    if int_list == None:
+    if int_list is None:
         raise ValueError
     if int_list == []:
         return None
@@ -23,7 +23,7 @@ def reverse_rec(int_list):   # must use recursion
     If list is None, raises ValueError."""
 
     # If list is None, raise ValueError
-    if int_list == None:
+    if int_list is None:
         raise ValueError
 
     # Check if list empty or last item
@@ -39,7 +39,7 @@ def bin_search(target, low, high, int_list):  # must use recursion
     If target is not found returns None. If list is None, raises ValueError."""
 
     # If list is None, raise ValueError
-    if int_list == None:
+    if int_list is None:
         raise ValueError
 
     # If list is empty, return None
